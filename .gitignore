@@ -6,3 +6,5 @@ env
 obj
 users
 env
+ghidra.lock
+ghidra.rep

@@ -30,7 +30,7 @@ def main(argv):
 
     # Return whether 'Good Job.' has been printed yet.
     # (!)
-    return ???  # :boolean
+    return stdout_output == "Good Job."  # :boolean
 
   # Same as above, but this time check if the state should abort. If you return
   # False, Angr will continue to step the state. In this specific challenge, the
@@ -38,7 +38,7 @@ def main(argv):
   # "Try again."
   def should_abort(state):
     stdout_output = state.posix.dumps(sys.stdout.fileno())
-    return ???  # :boolean
+    return "Try again."  # :boolean
 
   # Tell Angr to explore the binary and find any state that is_successful identfies
   # as a successful state by returning True.
